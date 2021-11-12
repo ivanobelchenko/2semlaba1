@@ -1,0 +1,431 @@
+@import url(https://fonts.google.com/specimen/Roboto);
+body
+{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(240, 235, 255);
+    min-width: 440px;
+    max-width: 2000px;
+}
+header
+{
+    background-color: black;
+    height: 170px;
+    color: rgb(240, 235, 255);
+}
+.header_block
+{
+    background-color: black;
+    padding-top: 30px;
+}
+h1,h2,h3
+{
+    text-align: center;
+    margin-top: 0%;
+}
+
+
+
+/*1 блок*/
+.block1
+{
+    background-color: white;
+    width: 80%;
+    margin-left: 10%;
+    padding:1%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/*1 flex-container в 1 блоке*/
+.block1_1_container
+{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1em;
+    flex-wrap: nowrap;
+}
+.block1_1_header
+{
+    color: black;
+    font-size: 1.2em;
+}
+.block1_1_1_item
+{
+    flex-grow: 2;
+}
+.block1_1_2_item
+{
+    flex-grow: 3;
+}
+.block1_1_3_item
+{
+    flex-grow: 3;
+}
+.block1_1_4_item
+{
+    flex-grow: 2;
+}
+
+/*2 flex-container в 1 блоке*/
+.block1_2_container
+{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 1em;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.block1_2_header
+{
+    color: black;
+    font-size: 1.2em;
+}
+.block1_2_1_item
+{
+    order: 2;
+}
+
+/*3 flex-container в 1 блоке*/
+.block1_3_container
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+.block1_3_header
+{
+    color: black;
+    font-size: 1.2em;
+}
+
+/*4 flex-container в 1 блоке*/
+.block1_4_container
+{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 1em;
+}
+.block1_4_header
+{
+    color: black;
+    font-size: 1.2em;
+}
+
+
+
+/*2 блок */
+.block2
+{
+    background-color: white;
+    width: 80%;
+    margin-left: 10%;
+    padding:1%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/*1 flex-container в 2 блоке*/
+.block2_1_container
+{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-end;
+}
+
+
+
+/*3 блок*/
+.block3
+{
+    background-color: white;
+    width: 80%;
+    margin-left: 10%;
+    padding:1%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/*1 flex-container в 3 блоке*/
+.block3_1_container
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.block3_1_1_item
+{
+    height: 30em;
+}
+
+
+
+/*4 блок*/
+.block4
+{
+    background-color: white;
+    width: 80%;
+    margin-left: 10%;
+    padding:1%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/*1 flex-container в 4 блоке*/
+.block4_1_container
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+/*2 flex-container в 4 блоке*/
+.block4_2_container
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-bottom: 1em;
+    align-items: stretch;
+}
+.block4_2_1_item, .block4_1_1_item
+{
+    height: 30em;
+}
+
+
+
+/*5 блок*/
+.block5
+{
+    background-color: white;
+    width: 80%;
+    margin-left: 10%;
+    padding:1%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/*1 flex-container в 5 блоке*/
+.block5_1_container
+{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+    margin-bottom: 1em;
+}
+
+.block5_1_1_item
+{
+    height: 30em;
+}
+
+/*2 flex-container в 5 блоке*/
+.block5_2_container
+{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    margin-bottom: 1em;
+}
+
+.block5_2_1_item
+{
+    height: 30em;
+}
+
+
+
+/*6 блок*/
+.block6
+{
+    background-color: white;
+    width: 80%;
+    margin-left: 10%;
+    padding:1%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/*1 flex-container в 6 блоке*/
+.block6_1_container
+{
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 1em;
+    align-content: flex-start;
+    height: 160em;
+}
+
+/*2 flex-container в 6 блоке*/
+.block6_2_container
+{
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 1em;
+    height: 160em;
+    align-content: flex-end;
+}
+
+/*3 flex-container в 6 блоке*/
+.block6_3_container
+{
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 1em;
+    height: 160em;
+    align-content: stretch;
+}
+
+/*4 flex-container в 6 блоке*/
+.block6_4_container
+{
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 1em;
+    height: 160em;
+    align-content: center;
+}
+
+/*5 flex-container в 6 блоке*/
+.block6_5_container
+{
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 1em;
+    height: 160em;
+    align-content: space-between;
+}
+
+/*6 flex-container в 6 блоке*/
+.block6_6_container
+{
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 1em;
+    height: 160em;
+    align-content: space-around;
+}
+
+/*7 flex-container в 6 блоке*/
+.block6_7_container
+{
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 1em;
+    height: 160em;
+    align-content: space-evenly;
+}
+
+
+
+/*7 блок*/
+.block7
+{
+    background-color: white;
+    width: 80%;
+    margin-left: 10%;
+    padding:1%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/*1 flex-container в 6 блоке*/
+.block7_1_container
+{
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 1em;
+}
+.block7_1_1_item
+{
+    flex-shrink: 4;
+    flex-basis: 250px;
+}
+.block7_1_2_item
+{
+    flex-shrink: 4;
+    flex-basis: 250px;
+}
+.block7_1_3_item
+{
+    flex-shrink: 1;
+    flex-basis: 250px;
+}
+.block7_1_4_item
+{
+    flex: 10 10 250px;
+}
+
+
+
+/*8 блок*/
+.block8
+{
+    background-color: white;
+    width: 80%;
+    margin-left: 10%;
+    padding:1%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/*1 flex-container в 8 блоке*/
+.block8_1_container
+{
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 1em;
+    align-items: baseline;
+}
+.block8_1_1_item
+{
+    align-self: stretch;
+}
+.block8_1_2_item
+{
+    align-self: flex-start;
+}
+.block8_1_3_item
+{
+    align-self: flex-end;
+}
+.block8_1_4_item
+{
+    align-self: center;
+}
+.block8_1_5_item
+{
+    height: 30em;
+    align-self: baseline;
+}
+
+
+
+/*Общие элементы для всех flex-item*/
+.image
+{
+    width: 100%;
+}
+.item_header
+{
+    text-align: center;
+    font-size: 1.5em;
+    width: 100%;
+}
+.item_text
+{
+    display: block;
+    text-align: center;
+    overflow-x: auto;
+    width: 100%;
+}
+.item
+{
+    background-color: rgb(240, 235, 255);
+    border: 5px solid black;
+    width: 10em;
+}
